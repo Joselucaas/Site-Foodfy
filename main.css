@@ -1,5 +1,10 @@
 @import url('https://fonts.googleapis.com/css2?family=Roboto:wght@400;700&display=swap');
 
+* {
+    padding: 0;
+    margin: 0;
+}
+
 header img {
     margin-left: 231px;
     margin-top: 36px;
@@ -69,6 +74,7 @@ body h1#title {
     width: 300px;
     height: 140px;
     margin: 0;
+    margin-top: 10px;
     border-radius: 15px;
 }
 
@@ -77,6 +83,7 @@ body h1#title {
     font-family: 'Roboto', sans-serif;
     font-weight: normal;
     margin-left: 1px;
+    margin-top: 10px;
 }
 
 .card .autor h1 {
@@ -85,5 +92,23 @@ body h1#title {
     color: #777777;
     font-weight: normal;
     margin-left: 1px;
-    margin-top: -10px;
+    margin-top: 2px;
+}
+/* FOOTER */
+
+footer {
+    width: 100%;
+    height: 62px;
+    background-color: #EEEEEE;
+    margin-top: 50px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+footer h1 {
+    font-family: 'Roboto', sans-serif;
+    font-size: 14px;
+    color: #999999;
+    font-weight: normal;
 }
