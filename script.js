@@ -10,7 +10,7 @@ const modal = document.querySelector('.modal')
 
 for(let card of cards){
     card.addEventListener("click", function(){
-        const imageId = card.querySelector("img").getAttribute("id")
+        const imageId = card.querySelector('img').getAttribute("id")
 
         const title = card.children[1].textContent
         const autor = card.children[2].textContent
