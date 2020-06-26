@@ -1,0 +1,203 @@
+@import url('https://fonts.googleapis.com/css2?family=Roboto&display=swap');
+
+* {
+    margin: 0;
+    padding: 0;
+    font-family: 'Roboto', sans-serif;
+}
+
+html {
+    overflow-x: hidden;
+}
+
+body h1 {
+    margin: 50px 230px;
+    font-size: 24px;
+}
+
+header {
+    margin: 36px 231px;
+}
+
+header img {
+    margin-right: 122px;
+}
+
+header a {
+    text-decoration: none;
+    margin-right: 30px;
+    color: black;
+}
+
+.begin {
+    width: 940px;
+    height: 366px;
+    background-color: #FBDFDB;
+    position: relative;
+
+    margin: 36px 231px;
+    border-radius: 30px;
+}
+
+.begin h1 {
+  position: absolute;
+  margin: 117px 60px;
+}
+
+.begin p {
+    position: absolute;
+    margin: 165px 60px;
+
+    width: 316px;
+    height: 84px;
+
+    font-size: 18px;
+    line-height: 28px;
+    color: rgba(0,0,0,0.7);
+}
+
+.begin img {
+    margin: 66px 624px;
+}
+
+/* CARDS */
+
+.content {
+     margin: 0 210px;
+} 
+
+.cards {
+    max-width: 940px;
+    margin-left: 20px;
+    display: grid;
+    grid-template-columns: 1fr 1fr 1fr;
+    gap: 20px;
+}
+
+.card {
+    width: 300px;
+}
+
+.card img {
+    width: 300px;
+    height: 140px;
+    margin: 0;
+    border-radius: 15px;
+}
+
+.name h1{
+    width: 254px;
+    font-size: 18px;
+    margin-left: 1px;
+    margin-top: 10px;
+    font-weight: normal;
+}
+
+.autor p{
+    font-size: 14px;
+    color: #777777;
+    margin-left: 1px;
+    margin-top: -47px;
+    width: 118px;
+}
+/* FOOTER */
+
+footer {
+    width: 100%;
+    height: 62px;
+    background-color: #EEEEEE;
+    margin-top: 60px;
+
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+footer p {
+    font-size: 14px;
+    color: #999999;
+}
+
+.sobre h2 {
+    font-size: 20px;
+    margin: 30px 0 40px 230px;
+}
+
+.sobre p {
+    width: 940px;
+    margin-left: 230px;
+    margin-top: -30px;
+
+    font-size: 18px;
+    line-height: 28px;
+    color: #444444;
+}
+
+footer spam {
+    font-size: 20px;
+}
+
+/* REVENUE */
+
+.cards#revenue {
+    margin-top: 64px;
+}
+
+/* MODAL */
+
+.modal-overlay {
+    width: 100%;
+    height: 100%;
+    background-color: rgba(0,0,0,0.7);
+
+    position: fixed;
+    top: 0;
+
+    display: flex;
+    justify-content: center;
+    align-items: center;
+
+    opacity: 0;
+    visibility: hidden;
+}
+
+.modal {
+    width: 660px;
+    height: 413px;
+
+    background-color: white;
+    border-radius: 16px;
+}
+
+.modal img {
+    width: 600px;
+    height: 200px;
+
+    margin: 30px;
+    border-radius: 15px;
+}
+
+.modal p {
+    font-size: 24px;
+    text-align: center;
+    margin-top: -20px;
+}
+
+.modal h2 {
+    font-size: 18px;
+    color: #777777;
+    text-align: center;
+    font-weight: normal;
+    margin-top: 3px;
+}
+
+.material-icons {
+    margin-left: 330px;
+    margin-top: 90px;
+    cursor: pointer;
+}
+
+.modal-overlay.active {
+    opacity: 1;
+    visibility: visible;
+}
