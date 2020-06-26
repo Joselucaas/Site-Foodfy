@@ -1,7 +1,7 @@
 # Site Foodfy <img src= "img/chapeu.svg" width = '30px'>
 
 <h1 align=center>
-<img src = "img/logo.png" width='200px'>
+<img src = "img/logo.png" width='300px'>
 </h1>
 
 ## 📜 Sobre
