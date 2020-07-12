@@ -14,6 +14,8 @@ Página inicial 👆🏼
 - HTML
 - CSS
 - JavaScript
+- Express
+- Nunjucks
 
 ## 📝 Licença
 Esse projeto está sob a licença MIT. Veja o arquivo [LICENSE](LICENSE) para mais detalhes.
