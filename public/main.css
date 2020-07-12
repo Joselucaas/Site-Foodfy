@@ -63,7 +63,7 @@ header a {
 /* CARDS */
 
 .content {
-     margin: 0 210px;
+    margin: 0 210px;
 } 
 
 .cards {
@@ -76,6 +76,7 @@ header a {
 
 .card {
     width: 300px;
+    cursor: pointer;
 }
 
 .card img {

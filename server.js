@@ -3,10 +3,11 @@ const nunjucks = require('nunjucks')
 
 const server = express()
 
+// Pegando arquivos estátivos (CSS, JS)
 server.use(express.static('public'))
 
-// Pegando a view engine, (HTML, NJK, JS...)
-server.set("view engine", "html")
+// Pegando a view engine, (HTML, NJK)
+server.set("view engine", "njk")
 
 nunjucks.configure("layouts", {
     express:server
