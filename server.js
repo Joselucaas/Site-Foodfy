@@ -32,3 +32,7 @@ server.get('/revenue', function(req, res) {
 server.get('/recipe', function(req, res) {
     res.render('recipe')
 })
+
+server.listen(3000, function() {
+    console.log('server is running')
+})
