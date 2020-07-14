@@ -26,6 +26,10 @@ server.get('/revenue', function(req, res) {
     res.render('revenue')
 })
 
+server.get("/page_revenue", function (req, res) {
+    res.render('page_revenue')
+  })
+
 server.listen(3000, function() {
     console.log('Server is runing')
 })
