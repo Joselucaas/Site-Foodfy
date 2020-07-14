@@ -1,5 +1,6 @@
 const express = require('express')
 const nunjucks = require('nunjucks')
+const recipes = require('./data')
 
 const server = express()
 
@@ -10,7 +11,9 @@ server.use(express.static('public'))
 server.set("view engine", "njk")
 
 nunjucks.configure("layouts", {
-    express:server
+    express:server,
+    autoescape: false,
+    noCache: true
 })
 
 // Trazendo o front end para o servidor
@@ -23,13 +26,9 @@ server.get('/about', function(req, res) {
 })
 
 server.get('/revenue', function(req, res) {
-    res.render('revenue')
+    res.render('revenue', {items:recipes})
 })
 
-server.get("/page_revenue", function (req, res) {
-    res.render('page_revenue')
-  })
-
-server.listen(3000, function() {
-    console.log('Server is runing')
+server.get('/recipe', function(req, res) {
+    res.render('recipe')
 })

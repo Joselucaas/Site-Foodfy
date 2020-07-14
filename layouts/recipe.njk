@@ -1,0 +1,41 @@
+{% extends "main.njk" %}
+
+{% block public %}
+    <link rel="stylesheet" href="/page_revenue.css">
+{% endblock %}
+
+{% block links %}
+    <a href="about">Sobre</a>
+    <a href="revenue"><b>Receitas</b></a>
+{% endblock %}
+
+{% block content %}
+    <div class="content">
+
+        <img src="{{item.image}}" alt="{{item.title}}">
+
+        <h1>{{item.title}}</h1>
+        <p id="autor">Por {{item.author}}</p>
+
+        <h2>Ingredientes</h2> <p id="script">ESCONDER</p>
+
+        <ul>
+            {% for ingredient in item.ingredients %}
+                <li>{{ingredient}}</li>
+            {% endfor%}
+        </ul>
+
+        <h2>Modo de preparo</h2> <p id="script-mid">MOSTRAR</p>
+
+            <ul>
+                {% for prepare in item.preparation%}
+                    <li>{{prepare}}</li>
+                {% endfor%}
+            </ul>
+
+        <h2>Informações adicionais</h2> <p id="script-bottom">ESCONDER</p>
+
+        <p>{{item.information}}</p>
+       
+    </div>
+{% endblock %}

@@ -5,7 +5,7 @@ const modal = document.querySelector('.modal')
 for(let card of cards) {
     card.addEventListener('click', function() {
         const link = card.getAttribute('id')
-        window.location.href = `/page_revenue?id=${link}`
+        window.location.href = `/recipe/?id=${link}`
     })
 }
 
