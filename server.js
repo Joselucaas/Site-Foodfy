@@ -29,8 +29,17 @@ server.get('/revenue', function(req, res) {
     res.render('revenue', {items:recipes})
 })
 
-server.get('/recipe', function(req, res) {
-    res.render('recipe')
+server.get('/recipe/:id', function(req, res) {
+    const id = req.params.id
+    const recipe = recipes.find(function(recipe) {
+        return recipe.id == id
+    })
+
+    if (!recipe) {
+        return res.render('not-found')
+    }
+
+    return res.render('recipe', {item: recipe})
 })
 
 server.listen(3000, function() {

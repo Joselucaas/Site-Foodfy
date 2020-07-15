@@ -17,25 +17,28 @@
         <h1>{{item.title}}</h1>
         <p id="autor">Por {{item.author}}</p>
 
-        <h2>Ingredientes</h2> <p id="script">ESCONDER</p>
+        <h2>Ingredientes</h2> 
+        <p class='showhide_btn' id="script">Esconder</p>
 
-        <ul>
+        <ul class="recipe_showhide">
             {% for ingredient in item.ingredients %}
-                <li>{{ingredient}}</li>
+                <li><spam>{{ingredient}}</spam></li>
             {% endfor%}
         </ul>
 
-        <h2>Modo de preparo</h2> <p id="script-mid">MOSTRAR</p>
+        <h2>Modo de preparo</h2> 
+        <p class='showhide_btn' id="script-mid">Esconder</p>
 
-            <ul>
+            <ul class="recipe_showhide">
                 {% for prepare in item.preparation%}
-                    <li>{{prepare}}</li>
+                    <li><spam>{{prepare}}</spam></li>
                 {% endfor%}
             </ul>
 
-        <h2>Informações adicionais</h2> <p id="script-bottom">ESCONDER</p>
+        <h2>Informações adicionais</h2> 
+        <p class='showhide_btn' id="script-bottom">Esconder</p>
 
-        <p>{{item.information}}</p>
+        <p class="recipe_showhide">{{item.information}}</p>
        
     </div>
 {% endblock %}

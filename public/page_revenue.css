@@ -37,6 +37,7 @@
     line-height: 27px;
     color: #444444;
     margin-top: 20px;
+    font-weight: normal;
 }
 
 p#script {
@@ -69,6 +70,7 @@ p {
     font-size: 18px;
     color: #444444;
     text-align: justify;
+    font-weight: normal;
 }
 
 footer p {
@@ -79,5 +81,12 @@ footer p {
 }
 
 footer spam {
-    margin-top: -2px;
+    margin-top: -4px;
+}
+
+.recipe_showhide{
+    display: block;
+}
+.recipe_showhide.active{
+    display: none;
 }

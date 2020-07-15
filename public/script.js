@@ -1,11 +1,10 @@
-const modalOverlay = document.querySelector('.modal-overlay')
 const cards = document.querySelectorAll('.card')
-const modal = document.querySelector('.modal')
+const ingredient = document.querySelectorAll('.recipe_showhide')
+const showHide = document.querySelectorAll('.showhide_btn')
 
 for(let card of cards) {
     card.addEventListener('click', function() {
-        const link = card.getAttribute('id')
-        window.location.href = `/recipe/?id=${link}`
+        const idCard = card.getAttribute('id')
+        window.location.href = `/recipe/${idCard}`
     })
 }
-
