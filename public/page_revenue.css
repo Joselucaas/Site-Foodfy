@@ -87,6 +87,6 @@ footer spam {
 .recipe_showhide{
     display: block;
 }
-.recipe_showhide.active{
+.recipe_showhide.hidden{
     display: none;
 }

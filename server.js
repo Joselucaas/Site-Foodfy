@@ -18,7 +18,7 @@ nunjucks.configure("layouts", {
 
 // Trazendo o front end para o servidor
 server.get('/', function(req, res) {
-    res.render("index")
+    res.render("index", {items:recipes})
 })
 
 server.get('/about', function(req, res) {

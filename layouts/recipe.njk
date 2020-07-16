@@ -18,7 +18,10 @@
         <p id="autor">Por {{item.author}}</p>
 
         <h2>Ingredientes</h2> 
-        <p class='showhide_btn' id="script">Esconder</p>
+
+        
+        <p class="showhide_btn" id="script">Esconder</p>
+        
 
         <ul class="recipe_showhide">
             {% for ingredient in item.ingredients %}
@@ -26,19 +29,31 @@
             {% endfor%}
         </ul>
 
-        <h2>Modo de preparo</h2> 
-        <p class='showhide_btn' id="script-mid">Esconder</p>
 
-            <ul class="recipe_showhide">
-                {% for prepare in item.preparation%}
-                    <li><spam>{{prepare}}</spam></li>
-                {% endfor%}
-            </ul>
+        <h2>Modo de preparo</h2>
+
+  
+        <p class="showhide_btn" id="script-mid">Esconder</p>
+        
+
+        <ul class="recipe_showhide">
+            {% for prepare in item.preparation%}
+                <li><spam>{{prepare}}</spam></li>
+            {% endfor%}
+        </ul>
+     
 
         <h2>Informações adicionais</h2> 
-        <p class='showhide_btn' id="script-bottom">Esconder</p>
+
+        
+        <p class="showhide_btn" id="script-bottom">Esconder</p>
+        
 
         <p class="recipe_showhide">{{item.information}}</p>
-       
+        
     </div>
+{% endblock %}
+
+{% block script %}
+    <script src="/script.js"></script>
 {% endblock %}

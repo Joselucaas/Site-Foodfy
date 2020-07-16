@@ -19,91 +19,24 @@
     <div class="content">
         <div class="cards">
 
-            <div class="card">
+            {% for item in items %}
+                <div class="card">
 
-                <img src="/img/burger.png" alt="Hamburguer">
+                    <img src="{{item.image}}" alt="{{item.title}}">
 
-                <div class="name">
-                    <h1>Triplo Bacon Burger</h1>
+                    <div class="name">
+                        <h1>{{item.title}}</h1>
+                    </div>
+
+                    <div class="autor">
+                        <p>por {{item.author}}</p>
+                    </div>
+                    
                 </div>
-
-                <div class="autor">
-                    <p>por Jorge Relato</p>
-                </div>
-
-            </div>
-
-            <div class="card">
-
-                <img src="/img/pizza.png" alt="Pizza">
-
-                <div class="name">
-                    <h1>Pizza 4 Estações</h1>
-                </div>
-
-                <div class="autor">
-                    <p>por Fabiana Melo</p>
-                </div>
-
-            </div>
-
-            <div class="card">
-
-                <img src="/img/espaguete.png" alt="Espaguete">
-
-                <div class="name">
-                    <h1>Espaguete ao Alho</h1>
-                </div>
-
-                <div class="autor">
-                    <p>por Júlia Kinoto</p>
-                </div>
-
-            </div>
-
-            <div class="card">
-
-                <img src="/img/lasanha.png" alt="Lasanha">
-
-                <div class="name">
-                    <h1>Lasanha Mac n’ Cheese</h1>
-                </div>
-
-                <div class="autor">
-                    <p>por Juliano Vieira</p>
-                </div>
-
-            </div>
-
-            <div class="card">
-
-                <img src="/img/doce.png" alt="Doce">
-
-                <div class="name">
-                    <h1>Docinhos Pão-do-Céu</h1>
-                </div>
-
-                <div class="autor">
-                    <p>por Ricardo Golvea</p>
-                </div>
-
-            </div>
-
-            <div class="card">
-
-                <img src="/img/asinhas.png" alt="Asinhas">
-
-                <div class="name">
-                    <h1>Asinhas de Frango ao Barbecue</h1>
-                </div>
-
-                <div class="autor">
-                    <p>por Vania Steroski</p>
-                </div>
-
-            </div>
-        </div>  
-    </div> 
+            {% endfor %}
+ 
+        </div> 
+    </div>
 {% endblock %}
 
     
