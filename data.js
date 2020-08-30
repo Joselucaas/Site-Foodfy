@@ -118,7 +118,7 @@ module.exports = [
   {
     id: 6,
     image: 'https://rocketseat-cdn.s3-sa-east-1.amazonaws.com/launchbase/receitas/doce.png',
-    title: 'Docinhos pão-do-céu',
+    title: 'Docinhos Pão do Céu',
     author: 'Ricardo Golvea',
     ingredients: [
       '1 kg de batata - doce',
